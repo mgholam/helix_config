@@ -36,7 +36,7 @@
 "ui.cursorline.primary" = { bg = "deep_blue", underline = { color = "orange", style = "double_line" } }
 "ui.cursorline.secondary" = { bg = "dark_blue", underline = { color = "white", style = "line" } }
 "ui.selection" = { fg = "yellow", bg = "blue" }
-"ui.selection.primary" = { fg = "yellow", bg = "deep_blue" }
+"ui.selection.primary" = { fg = "#ffff00", bg = "#0000ff" }
 
 "ui.menu" = { fg = "white", bg = "deep_blue" }
 "ui.menu.selected" = { fg = "orange", underline = { style = "line" } }
@@ -70,23 +70,23 @@
 "diff.minus" = "pink"
 
 # Syntax high light
-"type" = "emerald_green"
+"type" = "#4EC9B0"
 "type.buildin" = "emerald_green"
 "comment" = "red"
 "operator" = "white"
-"variable" = "aqua"
+"variable" = "#D4D4D4"
 "variable.other.member" = "brown"
 "constant" = "aqua"
-"constant.numeric" = "emerald_green"
+"constant.numeric" = "#B5CEA8"
 "attributes" = "blue"
 "namespace" = "blue"
-"string" = "brown"
+"string" = "#CE9178"
 "string.special.url" = "brown"
 "constant.character.escape" = "yellow"
 "constructor" = "aqua"
-"keyword" = "blue"
+"keyword" = "#569CD6"
 "keyword.control" = "purple"
-"function" = "yellow"
+"function" = "#DCDCAA"
 "label" = "blue"
 "tag" = "aqua"
 "attribute" = "blue"
