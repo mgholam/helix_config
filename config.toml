@@ -4,6 +4,7 @@ theme = "mydark"
 [editor]
 auto-format = true
 cursorline = true
+color-modes = true 
 
 [editor.auto-save]
 focus-lost = true
@@ -12,6 +13,8 @@ after-delay.timeout = 3000
 
 
 [keys.normal]
+#y = "yank_main_selection_to_clipboard" # does not work with * override
+p = "paste_clipboard_before"
 "ret" = "append_mode"
 C-s = ":w"
 "A-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
@@ -24,6 +27,8 @@ C-end = "@ge"
 C-l = "@xd"
 C-right = "@w"
 C-left = "@b"
+"*" = "@be\"/y"
+"C-b" = "save_selection"  # bookmark
 
 [keys.insert]
 C-s = ":w"

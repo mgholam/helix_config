@@ -8,6 +8,10 @@ name = "c-sharp"
 auto-format = true
 formatter = {command = "bash", args = ["-c", "uncrustify -c $HOME/.config/helix/csharp.cfg --assume cs"] }
 
+[[language]]
+name = "svelte"
+auto-format = true
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
 
 [[language]]
 name = "go"
