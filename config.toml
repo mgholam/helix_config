@@ -2,7 +2,7 @@
 theme = "mydark"
 
 [keys.normal]
-"ret" = "insert_mode"
+"ret" = "append_mode"
 C-s = ":w"
 "A-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 "A-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
@@ -12,9 +12,16 @@ C-home = "@gg"
 C-end = "@ge"
 "del" = "@d"
 C-l = "@xd"
+C-right = "@w"
+C-left = "@b"
 
 [keys.insert]
 C-s = ":w"
+"C-right" = ["normal_mode", "move_next_word_start", "append_mode"]
+"C-left" = ["normal_mode", "move_prev_word_start", "insert_mode"]
+"A-/" = "toggle_comments"
+"A-down" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "paste_after", "append_mode"]
+"A-up" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before" , "append_mode"]
 
 [keys.normal.space]
 q = ":q!"
