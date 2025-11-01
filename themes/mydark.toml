@@ -6,7 +6,8 @@
 "special" = "orange"                           # file picker fuzzy match
 "ui.background.separator" = { fg = "white" }
 "ui.text" = "white"
-"ui.text.focus" = { modifiers = ["reversed"] } # file picker selected
+#"ui.text.focus" = { modifiers = ["reversed"] } # file picker selected
+"ui.text.focus" = {underline = { color = "#ff0000", style = "line" }, modifiers = ["bold",] }
 
 "ui.virtual.jump-label" = { fg = "deep_red", modifiers = ["bold",], underline = { color = "deep_red", style = "line" } }
 "ui.virtual" = "gray"
@@ -45,6 +46,7 @@
 "ui.popup.info" = { fg = "white", bg = "deep_blue" }
 
 "ui.highlight" = {underline = { color = "#ff0000", style = "curl" }, modifiers = ["bold",] }
+
 
 "ui.gutter" = { bg = "black" }
 "ui.gutter.selected" = { bg = "black" }
