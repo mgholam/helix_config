@@ -4,6 +4,12 @@ args = ["--stdio"]
 
 
 [[language]]
+name = "c-sharp"
+auto-format = true
+formatter = {command = "bash", args = ["-c", "uncrustify -c $HOME/.config/helix/csharp.cfg --assume cs"] }
+
+
+[[language]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
