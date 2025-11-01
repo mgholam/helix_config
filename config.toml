@@ -3,6 +3,7 @@ theme = "mydark"
 
 [editor]
 auto-format = true
+cursorline = true
 
 [editor.auto-save]
 focus-lost = true

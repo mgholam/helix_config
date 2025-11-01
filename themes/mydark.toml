@@ -29,9 +29,9 @@
 "ui.cursor.insert" = { fg = "black", bg = "white" }
 "ui.cursor.select" = { fg = "yellow", bg = "blue" }
 "ui.cursor.match" = { modifiers = ["reversed"] }
-"ui.cursor.primary" = { fg = "black", bg = "white", modifiers = ["slow_blink"] }
+"ui.cursor.primary" = { fg = "black", bg = "#eeeeee", modifers = ["bold"] }
 "ui.cursor.secondary" = "white"
-"ui.cursorline.primary" = { bg = "deep_blue", underline = { color = "orange", style = "double_line" } }
+"ui.cursorline.primary" = { bg = "deep_blue" }
 "ui.cursorline.secondary" = { bg = "dark_blue", underline = { color = "white", style = "line" } }
 "ui.selection" = { fg = "yellow", bg = "blue" }
 "ui.selection.primary" = { fg = "#ffff00", bg = "#0000ff" }
@@ -44,7 +44,7 @@
 "ui.popup" = { bg = "deep_blue" }
 "ui.popup.info" = { fg = "white", bg = "deep_blue" }
 
-"ui.highlight" = {underline = { color = "#ff0000", style = "line" }, modifiers = ["bold",] }
+"ui.highlight" = {underline = { color = "#ff0000", style = "curl" }, modifiers = ["bold",] }
 
 "ui.gutter" = { bg = "black" }
 "ui.gutter.selected" = { bg = "black" }
