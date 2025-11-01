@@ -1,6 +1,15 @@
 #theme = "dark_high_contrast"
 theme = "mydark"
 
+[editor]
+auto-format = true
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 3000
+
+
 [keys.normal]
 "ret" = "append_mode"
 C-s = ":w"
