@@ -50,7 +50,7 @@
 
 "ui.gutter" = { bg = "black" }
 "ui.gutter.selected" = { bg = "black" }
-"ui.linenr" = { fg = "white", bg = "black" }
+"ui.linenr" = { fg = "gray", bg = "black" }
 "ui.linenr.selected" = { fg = "orange", bg = "black", modifiers = ["bold"] }
 
 # Diagnostic
