@@ -17,4 +17,10 @@ npm i -g @tailwindcss/language-server
 
 # ts js
 npm i -g typescript typescript-language-server
+
+# sql-formatter
+npm i -g sql-formatter
+
+# xmllint
+apt get xmllint
 ```
