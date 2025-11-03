@@ -14,7 +14,7 @@ after-delay.timeout = 3000
 [keys.normal]
 #y = "yank_main_selection_to_clipboard" # does not work with * override
 p = "paste_clipboard_before"
-"ret" = "append_mode"
+"ret" = ["insert_mode"]
 C-s = ":w"
 "A-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 "A-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]

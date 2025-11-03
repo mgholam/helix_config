@@ -28,6 +28,11 @@ formatter = { command = "bash", args = ["-c", "npx sql-formatter -l tsql"] }
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
+language-servers = ["gopls", "snippets-ls"]
+
+[language-server.snippets-ls]
+command = "snippets-ls"
+args = ["-lang", "go"]
 
 [[language]]
 name = "html"
