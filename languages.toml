@@ -31,7 +31,7 @@ formatter = { command = "goimports" }
 language-servers = ["gopls", "snippets-ls"]
 
 [language-server.snippets-ls]
-command = "sh"
+command = "bash"
 args = ["-c", "snippets-ls -path $HOME/.config/helix/go.json"]
 
 [[language]]
