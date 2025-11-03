@@ -3,15 +3,20 @@ command = "tailwindcss-language-server"
 args = ["--stdio"]
 
 
+
 [[language]]
 name = "c-sharp"
 auto-format = true
 formatter = {command = "bash", args = ["-c", "uncrustify -c $HOME/.config/helix/csharp.cfg --assume cs"] }
 
+
+
 [[language]]
 name = "svelte"
 auto-format = true
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
+
+
 
 [[language]]
 name = "xml"
@@ -19,25 +24,56 @@ file-types = ["xml", "lic", "slf" ]
 #auto-format = true
 formatter = { command = "bash", args = ["-c", "xmllint --format -"] }
 
+
+
 [[language]]
 name = "sql"
 auto-format = true
 formatter = { command = "bash", args = ["-c", "npx sql-formatter -l tsql"] }
 
+
+
+[language-server.gopls]
+command = "gopls"
+
+[language-server.gopls.config]
+# diagnosticsTrigger = "Save"
+usePlaceholders = true
+staticcheck = true
+vulncheck = "Imports" # or "All"
+gofumpt = true
+goimports = true
+
+[language-server.gopls.config.analyses]
+unusedfunc = true
+unusedparams = true
+unreachable = true
+unusedvariable = true
+
+[language-server.gopls.config.hints]
+compositeLiteralTypes = true
+
 [[language]]
 name = "go"
+indent = { tab-width = 2, unit = " " }
 auto-format = true
-formatter = { command = "goimports" }
 language-servers = ["gopls", "snippets-ls"]
+#formatter = { command = "bash", args= ["-c", "gofmt | goimports"] }
+
+
 
 [language-server.snippets-ls]
 command = "bash"
 args = ["-c", "snippets-ls -path $HOME/.config/helix/go.json"]
 
+
+
 [[language]]
 name = "html"
 auto-format = true
 file-types = ["html", "xml"]
+
+
 
 [[language]]
 name = "json"
@@ -49,6 +85,8 @@ language-servers = [
 formatter = { command = "biome", args = ["format", "--stdin-file-path=_.json"] }
 auto-format = true
 
+
+
 [[language]]
 name = "javascript"
 language-servers = [
@@ -59,6 +97,8 @@ language-servers = [
 formatter = { command = "biome", args = ["format", "--stdin-file-path", "_.js"] }
 auto-format = true
 
+
+
 [[language]]
 name = "typescript"
 language-servers = [
@@ -68,6 +108,8 @@ language-servers = [
 ]
 formatter = { command = "biome", args = ["format", "--stdin-file-path=_.ts"] }
 auto-format = true
+
+
 
 [[language]]
 name = "css"
