@@ -35,6 +35,9 @@ C-left = "@b"
 "S-left" = ["normal_mode", "extend_char_left"]
 "S-C-left" =  ["normal_mode", "extend_prev_word_start"]
 "S-C-right" =  ["normal_mode", "extend_next_word_end"]
+"f" = "@ /// fix\\s?:"
+"t" = "@ /// todo\\s?:"
+"C-t" = "@ /// [a-z]*\\s?:"
 
 [keys.insert]
 C-s = ":w"
