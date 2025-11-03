@@ -1,12 +1,9 @@
-# GreasySlug : dark high contrast <9619abgoni@gmail.com>
-
 # Interface
 "ui.background" = { bg = "black" }
 "ui.window" = { fg = "aqua" }
 "special" = "orange"                           # file picker fuzzy match
 "ui.background.separator" = { fg = "white" }
 "ui.text" = "white"
-#"ui.text.focus" = { modifiers = ["reversed"] } # file picker selected
 "ui.text.focus" = {underline = { color = "#ff0000", style = "line" }, modifiers = ["bold",] }
 
 "ui.virtual.jump-label" = { fg = "deep_red", modifiers = ["bold",], underline = { color = "deep_red", style = "line" } }
@@ -28,13 +25,13 @@
 
 "ui.cursor" = { fg = "black", bg = "white" }
 "ui.cursor.insert" = { fg = "black", bg = "white" }
-"ui.cursor.select" = { fg = "yellow", bg = "blue" }
+"ui.cursor.select" = { fg = "yellow", bg = "deep_blue" }
 "ui.cursor.match" = { modifiers = ["reversed"] }
 "ui.cursor.primary" = { fg = "black", bg = "#eeeeee", modifers = ["bold"] }
 "ui.cursor.secondary" = "white"
 "ui.cursorline.primary" = { bg = "deep_blue" }
 "ui.cursorline.secondary" = { bg = "dark_blue", underline = { color = "white", style = "line" } }
-"ui.selection" = { fg = "yellow", bg = "blue" }
+"ui.selection" = { fg = "yellow", bg = "dark_blue" }
 "ui.selection.primary" = { fg = "#ffff00", bg = "#0000ff" }
 
 "ui.menu" = { fg = "white", bg = "deep_blue" }
