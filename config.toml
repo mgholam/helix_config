@@ -22,12 +22,17 @@ C-s = ":w"
 "ins" = "insert_mode"
 C-home = "@gg"
 C-end = "@ge"
-"del" = "@d"
+"del" = ["delete_selection", "insert_mode"]
 C-l = "@xd"
 C-right = "@w"
 C-left = "@b"
 "*" = "@be\"/y"
+"backspace" = ["insert_mode"]
 "C-b" = "save_selection"  # bookmark
+"S-end" = ["normal_mode", "extend_to_line_end"]
+"S-home" = ["normal_mode", "extend_to_line_start"]
+"S-right" = ["normal_mode", "extend_char_right"]
+"S-left" = ["normal_mode", "extend_char_left"]
 
 [keys.insert]
 C-s = ":w"
@@ -36,6 +41,11 @@ C-s = ":w"
 "A-/" = "toggle_comments"
 "A-down" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "paste_after", "append_mode"]
 "A-up" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before" , "append_mode"]
+"C-l" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "insert_mode"]
+"S-end" = ["normal_mode", "extend_to_line_end"]
+"S-home" = ["normal_mode", "extend_to_line_start"]
+"S-right" = ["normal_mode", "extend_char_right"]
+"S-left" = ["normal_mode", "extend_char_left"]
 
 [keys.normal.space]
 q = ":q!"
