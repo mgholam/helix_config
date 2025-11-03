@@ -54,6 +54,8 @@ C-s = ":w"
 "S-C-left" =  ["normal_mode", "extend_prev_word_start"]
 "S-C-right" =  ["normal_mode", "extend_next_word_end"]
 "C-u" = ["normal_mode", "undo", "insert_mode"]
+"C-c" = ["normal_mode", "extend_to_line_bounds", "yank", "insert_mode"]
+"C-v" = ["normal_mode", "paste_after", "insert_mode"]
 
 [keys.normal.space]
 q = ":q!"
