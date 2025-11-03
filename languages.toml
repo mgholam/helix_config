@@ -42,7 +42,6 @@ usePlaceholders = true
 staticcheck = true
 vulncheck = "Imports" # or "All"
 gofumpt = true
-goimports = true
 
 [language-server.gopls.config.analyses]
 unusedfunc = true
@@ -58,7 +57,6 @@ name = "go"
 indent = { tab-width = 2, unit = " " }
 auto-format = true
 language-servers = ["gopls", "snippets-ls"]
-#formatter = { command = "bash", args= ["-c", "gofmt | goimports"] }
 
 
 
