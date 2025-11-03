@@ -31,8 +31,8 @@ formatter = { command = "goimports" }
 language-servers = ["gopls", "snippets-ls"]
 
 [language-server.snippets-ls]
-command = "snippets-ls"
-args = ["-lang", "go"]
+command = "sh"
+args = ["-c", "snippets-ls -path $HOME/.config/helix/go.json"]
 
 [[language]]
 name = "html"
