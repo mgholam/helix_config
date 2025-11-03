@@ -33,6 +33,8 @@ C-left = "@b"
 "S-home" = ["normal_mode", "extend_to_line_start"]
 "S-right" = ["normal_mode", "extend_char_right"]
 "S-left" = ["normal_mode", "extend_char_left"]
+"S-C-left" =  ["normal_mode", "extend_prev_word_start"]
+"S-C-right" =  ["normal_mode", "extend_next_word_end"]
 
 [keys.insert]
 C-s = ":w"
@@ -46,6 +48,8 @@ C-s = ":w"
 "S-home" = ["normal_mode", "extend_to_line_start"]
 "S-right" = ["normal_mode", "extend_char_right"]
 "S-left" = ["normal_mode", "extend_char_left"]
+"S-C-left" =  ["normal_mode", "extend_prev_word_start"]
+"S-C-right" =  ["normal_mode", "extend_next_word_end"]
 
 [keys.normal.space]
 q = ":q!"
