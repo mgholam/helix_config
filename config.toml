@@ -38,6 +38,7 @@ C-left = "@b"
 "f" = "@ /// fix\\s?:"
 "t" = "@ /// todo\\s?:"
 "C-t" = "@ /// [a-z]*\\s?:"
+"C-h"= ["signature_help"]
 
 [keys.insert]
 C-s = ":w"
@@ -56,6 +57,7 @@ C-s = ":w"
 "C-u" = ["normal_mode", "undo", "insert_mode"]
 "C-c" = ["normal_mode", "extend_to_line_bounds", "yank", "insert_mode"]
 "C-v" = ["normal_mode", "paste_after", "insert_mode"]
+"C-h"= ["signature_help"]
 
 [keys.normal.space]
 q = ":q!"
