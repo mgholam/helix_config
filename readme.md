@@ -5,5 +5,11 @@
 ./install.sh
 
 # install : xmllint
-apt get xmllint
+dnf install xmllint
+
+# for better usage also install
+sd          # search and replace
+snippets-ls # go snippets
+tmux  
+lazygit + delta
 ```
