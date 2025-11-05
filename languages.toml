@@ -56,11 +56,9 @@ compositeLiteralTypes = true
 name = "go"
 indent = { tab-width = 2, unit = " " }
 auto-format = true
-language-servers = ["gopls", "snippets-ls"]
+language-servers = ["gopls", "gosnippets"]
 
-
-
-[language-server.snippets-ls]
+[language-server.gosnippets]
 command = "bash"
 args = ["-c", "snippets-ls -path $HOME/.config/helix/go.json"]
 
@@ -90,10 +88,15 @@ name = "javascript"
 language-servers = [
   { name = "typescript-language-server", except-features = ["format"] },
   "biome",
-  "tailwindcss-ls"
+  "tailwindcss-ls",
+  "jssnippets"
 ]
 formatter = { command = "biome", args = ["format", "--stdin-file-path", "_.js"] }
 auto-format = true
+
+[language-server.jssnippets]
+command = "bash"
+args = ["-c", "snippets-ls -path $HOME/.config/helix/js.json"]
 
 
 
