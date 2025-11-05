@@ -1,8 +1,18 @@
 {
-		"function": {
-			"prefix": "fn",
-			"body": "func Test$1(t *testing.T) {\n\t$0\n}",
-			"description": "function"
-		}
+  "function": {
+    "prefix": "fn",
+    "body": "func Test$1(t *testing.T) {\n\t$0\n}",
+    "description": "function"
+  },
+  "qjs read lines": {
+    "prefix": "qjslines",
+    "body": [
+      "var line;",
+      "while(line = std.in.getline()) {",
+      "",
+      "}",
+      ""
+    ],
+    "description": "qjs read lines"
+  }
 }
-

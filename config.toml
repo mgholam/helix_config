@@ -4,11 +4,15 @@ theme = "mydark"
 auto-format = true
 cursorline = true
 color-modes = true
+#lsp.display-inlay-hints = true
 
 [editor.auto-save]
 focus-lost = true
 after-delay.enable = true
 after-delay.timeout = 3000
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
 
 
 [keys.normal]
@@ -57,7 +61,8 @@ C-s = ":w"
 "C-u" = ["normal_mode", "undo", "insert_mode"]
 "C-c" = ["normal_mode", "extend_to_line_bounds", "yank", "insert_mode"]
 "C-v" = ["normal_mode", "paste_after", "insert_mode"]
-"C-h"= ["signature_help"]
+"C-h" = ["signature_help"]
+"capslock" = ["normal_mode"]
 
 [keys.normal.space]
 q = ":q!"
