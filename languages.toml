@@ -21,7 +21,7 @@ language-servers = [ "svelteserver", "tailwindcss-ls" ]
 [[language]]
 name = "xml"
 file-types = ["xml", "lic", "slf" ]
-#auto-format = true
+auto-format = true
 formatter = { command = "bash", args = ["-c", "xmllint --format -"] }
 
 
@@ -67,7 +67,7 @@ args = ["-c", "snippets-ls -path $HOME/.config/helix/go.json"]
 [[language]]
 name = "html"
 auto-format = true
-file-types = ["html", "xml"]
+file-types = ["html"]
 
 
 
@@ -75,7 +75,6 @@ file-types = ["html", "xml"]
 name = "json"
 language-servers = [
   { name = "vscode-json-language-server", except-features = ["format"] },
-  #"biome",
   "tailwindcss-ls"
 ]
 formatter = { command = "jq" }
