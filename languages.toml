@@ -7,7 +7,7 @@ args = ["--stdio"]
 [[language]]
 name = "c-sharp"
 auto-format = true
-formatter = {command = "bash", args = ["-c", "uncrustify -c $HOME/.config/helix/csharp.cfg --assume cs"] }
+formatter = {command = "bash", args = ["-c", "uncrustify -c $HOME/.config/helix/csharp.cfg -l cs"] }
 
 
 
