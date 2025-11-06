@@ -4,12 +4,12 @@
 # run install script
 ./install.sh
 
-# install : xmllint
-dnf install xmllint
+# install formatters : xmllint and jq
+dnf install xmllint  jq
 
 # for better usage also install
 sd          # search and replace
-snippets-ls # go snippets
+snippets-ls # go snippets lsp
 tmux  
 lazygit + delta
 ```

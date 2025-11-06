@@ -1,9 +1,4 @@
 {
-  "function": {
-    "prefix": "fn",
-    "body": "func Test$1(t *testing.T) {\n\t$0\n}",
-    "description": "function"
-  },
   "qjs read lines": {
     "prefix": "qjslines",
     "body": [
@@ -14,5 +9,14 @@
       ""
     ],
     "description": "qjs read lines"
+  },
+  "qjs exec": {
+    "prefix": "qjsexec",
+    "body": [
+      "const stream = std.popen(\"${1:command}\", \"r\");",
+      "var s = stream.readAsString();",
+      ""
+    ],
+    "description": "qjs exec"
   }
 }
