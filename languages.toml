@@ -75,10 +75,10 @@ file-types = ["html", "xml"]
 name = "json"
 language-servers = [
   { name = "vscode-json-language-server", except-features = ["format"] },
-  "biome",
+  #"biome",
   "tailwindcss-ls"
 ]
-formatter = { command = "biome", args = ["format", "--stdin-file-path=_.json"] }
+formatter = { command = "jq" }
 auto-format = true
 
 
