@@ -49,7 +49,7 @@ C-left = "@b"
 "C-h"= ["signature_help"]
 
 [keys.insert]
-C-s = ":w"
+C-s = ["normal_mode", ":w"]
 "C-right" = ["normal_mode", "move_next_word_start", "append_mode"]
 "C-left" = ["normal_mode", "move_prev_word_start", "insert_mode"]
 "A-/" = "toggle_comments"
