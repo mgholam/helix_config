@@ -68,7 +68,7 @@ args = ["-c", "snippets-ls -path $HOME/.config/helix/go.json"]
 name = "html"
 auto-format = true
 file-types = ["html"]
-
+formatter = { command = "bash", args = ["-c","biome format --config-path $HOME/.config/helix/biome.jsonc --stdin-file-path f.html"]}
 
 
 [[language]]
