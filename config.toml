@@ -30,6 +30,10 @@ center = [
     "file-modification-indicator",
     "position-percentage",
 ]
+
+[editor.soft-wrap]
+enable = true
+
 #[editor.statusline.mode]
 #insert = "INSERT"
 #normal = "NORMAL"
@@ -89,3 +93,4 @@ C-s = ["normal_mode", ":w"]
 [keys.normal.space]
 q = ":q!"
 "space" = "file_picker"
+W = [":toggle soft-wrap.enable", ":redraw"]
