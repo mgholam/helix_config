@@ -4,23 +4,9 @@ theme = "mydark"
 auto-format = true
 cursorline = true
 color-modes = true
-#lsp.display-inlay-hints = true
-
-[editor.auto-save]
-focus-lost = true
-after-delay.enable = true
-after-delay.timeout = 3000
-
-[editor.inline-diagnostics]
-cursor-line = "hint"
-
-[editor.cursor-shape]
-insert = "bar"
-normal = "block"
-select = "underline"
-
-[editor.statusline]
-center = [
+soft-wrap.enable = true
+inline-diagnostics.cursor-line = "hint"
+statusline.center = [
     "file-encoding",
     "file-type",
     "file-line-ending",
@@ -30,9 +16,17 @@ center = [
     "file-modification-indicator",
     "position-percentage",
 ]
+#lsp.display-inlay-hints = true
 
-[editor.soft-wrap]
-enable = true
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 3000
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
 
 #[editor.statusline.mode]
 #insert = "INSERT"
@@ -86,8 +80,6 @@ C-s = ["normal_mode", ":w"]
 "C-c" = ["normal_mode", "extend_to_line_bounds", "yank","yank_main_selection_to_clipboard", "insert_mode"]
 "C-v" = ["normal_mode", "paste_after", "insert_mode"]
 "C-h" = ["signature_help"]
-#"capslock" = ["normal_mode"]
-#"`" = {}
 "`" = { "`" = "normal_mode" }
 
 [keys.normal.space]
