@@ -23,7 +23,7 @@
 "ui.statusline.select" = { fg = "black", bg = "purple" }
 "ui.statusline.separator" = { fg = "aqua", bg = "white" }
 
-"ui.cursor.normal" = { fg = "black", bg = "white" }
+"ui.cursor.normal" = { fg = "black", bg = "white", modifers = ["rapid_blink"] }
 "ui.cursor.insert" = { fg = "black", bg = "white", modifers = ["rapid_blink"] }
 "ui.cursor.select" = { fg = "yellow", bg = "deep_blue" }
 "ui.cursor.match" = { modifiers = ["reversed"] }

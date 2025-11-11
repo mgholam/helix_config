@@ -18,3 +18,8 @@ npm i -g typescript typescript-language-server
 
 # sql-formatter
 npm i -g sql-formatter
+
+# biome js/html/css formatter/linter
+# does not work on termux -> build from src:
+# > cargo install --git https://github.com/biomejs/biome biome_cli
+npm i -g @biomejs/biome
