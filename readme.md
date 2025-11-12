@@ -16,5 +16,17 @@ uncrustify  # c# formatting
 biome       # js/html/css formatting
 ```
 
+## update
+
+```sh
+# view updates available
+npm outdated -g 
+# update
+npm update -g
+```
+
+
+
 ## fix
+
 - cursor not blinking
