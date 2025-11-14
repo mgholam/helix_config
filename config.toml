@@ -16,6 +16,7 @@ statusline.center = [
     "file-modification-indicator",
     "position-percentage",
 ]
+bufferline = "multiple"
 #lsp.display-inlay-hints = true
 
 [editor.auto-save]
@@ -45,7 +46,7 @@ C-s = ":w"
 C-home = "@gg"
 C-end = "@ge"
 "del" = ["delete_selection", "insert_mode"]
-C-l = "@xd"
+C-l = "@Xd"
 C-right = "@w"
 C-left = "@b"
 "*" = "@be\"/yn"
@@ -62,6 +63,8 @@ C-left = "@b"
 "C-t" = "@ /// [a-z]*\\s?:"
 "C-h"= ["signature_help"]
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+"C-w" = ":buffer-close"
+#"C-tab" = "@gn"
 
 [keys.insert]
 C-s = ["normal_mode", ":w"]

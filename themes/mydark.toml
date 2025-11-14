@@ -43,7 +43,7 @@
 "ui.popup.info" = { fg = "white", bg = "deep_blue" }
 
 "ui.highlight" = {underline = { color = "#ff0000", style = "curl" }, modifiers = ["bold",] }
-
+#"ui.bufferline.active" = { bg="orange" }
 
 "ui.gutter" = { bg = "black" }
 "ui.gutter.selected" = { bg = "black" }
