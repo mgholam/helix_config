@@ -61,6 +61,7 @@ C-left = "@b"
 "t" = "@ /// todo\\s?:"
 "C-t" = "@ /// [a-z]*\\s?:"
 "C-h"= ["signature_help"]
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 
 [keys.insert]
 C-s = ["normal_mode", ":w"]
