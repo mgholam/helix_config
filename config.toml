@@ -90,3 +90,4 @@ C-s = ["normal_mode", ":w"]
 q = ":q!"
 "space" = "file_picker"
 W = [":toggle soft-wrap.enable", ":redraw"]
+g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
