@@ -5,7 +5,9 @@
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single", // default is `double`
+      "enabled": true,
+      "indentWidth": 2,
+//      "quoteStyle": "single", // default is `double`
       "lineWidth": 120 // override `formatter.lineWidth`
     }
   },

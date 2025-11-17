@@ -91,7 +91,9 @@ language-servers = [
   "tailwindcss-ls",
   "jssnippets"
 ]
-formatter = { command = "biome", args = ["format", "--stdin-file-path", "_.js"] }
+#indent = { tab-width = 4, unit = "    " }
+#formatter = { command = "biome", args = ["format", "--stdin-file-path", "_.js"] }
+formatter = { command = "bash", args = ["-c","biome format --config-path $HOME/.config/helix/biome.jsonc --stdin-file-path f.js"]}
 auto-format = true
 
 [language-server.jssnippets]
