@@ -62,6 +62,7 @@ C-right = "@w"
 C-left = "@b"
 "C-w" = ":buffer-close"
 "F3" = "@n" # vscode style find next
+"C-x" = "@yd"
 
 # usability workarounds
 "C-b" = "save_selection"  # bookmark
@@ -88,6 +89,7 @@ C-s = ["normal_mode", ":w"] # save and exit insert mode ready for commands
 "S-C-left" =  ["normal_mode", "extend_prev_word_start"]
 "S-C-right" =  ["normal_mode", "extend_next_word_end"]
 "C-l" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "insert_mode"]
+#"C-x" = ["normal_mode", "yank", "yank_main_selection_to_clipboard", "delete_selection", "insert_mode"]
 
 # usability workarounds
 "C-u" = ["normal_mode", "undo", "insert_mode"]
