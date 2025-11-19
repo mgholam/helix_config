@@ -109,7 +109,7 @@ language-servers = [
   "biome",
   "tailwindcss-ls"
 ]
-formatter = { command = "biome", args = ["format", "--stdin-file-path=_.ts"] }
+formatter = { command = "bash", args = ["-c","biome format --config-path $HOME/.config/helix/biome.jsonc --stdin-file-path f.ts"]}
 auto-format = true
 
 
@@ -117,7 +117,7 @@ auto-format = true
 [[language]]
 name = "css"
 language-servers = ["vscode-css-language-server", "tailwindcss-ls"]
-formatter = { command = "biome", args = ["format", "--stdin-file-path", "_.css"] }
+formatter = { command = "bash", args = ["-c","biome format --config-path $HOME/.config/helix/biome.jsonc --stdin-file-path f.css"]}
 auto-format = true
 
 
