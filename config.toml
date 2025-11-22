@@ -37,34 +37,35 @@ select = "underline"
 [keys.normal]
 y = ["yank", "yank_main_selection_to_clipboard"]
 p = "paste_clipboard_before"
-# ergonomics
+# -- ergonomics --
 "ret" = ["insert_mode"] # enter insert mode with ret
 "ins" = "insert_mode" # insert mode with ins
 "del" = ["delete_selection", "insert_mode"] # deleted selection and go into edit mode
 "backspace" = ["insert_mode"]
-"*" = "@be\"/yn"
+"*" = "@be\"/yn" # search for current word under cursor
 
-# vscode style
+# -- vscode style --
 C-s = ":w" # save
 "A-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"] # alt down move selected text
 "A-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"] # alt up move selected text
 "A-/" = "toggle_comments" # comment selected lines
-"S-end" = ["normal_mode", "extend_to_line_end"]
+# select with shift and ctrl+shift
+"S-end" = ["normal_mode", "extend_to_line_end"] 
 "S-home" = ["normal_mode", "extend_to_line_start"]
 "S-right" = ["normal_mode", "extend_char_right"]
 "S-left" = ["normal_mode", "extend_char_left"]
 "S-C-left" =  ["normal_mode", "extend_prev_word_start"]
 "S-C-right" =  ["normal_mode", "extend_next_word_end"]
-C-home = "@gg"
-C-end = "@ge"
-C-l = "@Xd"
-C-right = "@w"
+C-home = "@gg" # goto top of file
+C-end = "@ge" # goto end of file
+C-l = "@Xd" # delete current line
+C-right = "@w" 
 C-left = "@b"
-"C-w" = ":buffer-close"
+"C-w" = ":buffer-close" 
 "F3" = "@n" # vscode style find next
-"C-x" = "@yd"
+"C-x" = "@yd" # cut selection
 
-# usability workarounds
+# -- usability workarounds --
 "C-b" = "save_selection"  # bookmark
 "f" = "@ /// fix\\s?:" # find all FIX comments
 "t" = "@ /// todo\\s?:" # find all TODO comments
@@ -73,10 +74,10 @@ C-left = "@b"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"] # lazygit
 
 [keys.insert]
-# ergonomics
+# -- ergonomics --
 C-s = ["normal_mode", ":w"] # save and exit insert mode ready for commands
 
-# vscode style
+# -- vscode style --
 "C-right" = ["normal_mode", "move_next_word_start", "append_mode"]
 "C-left" = ["normal_mode", "move_prev_word_start", "insert_mode"]
 "A-/" = "toggle_comments"
@@ -91,7 +92,7 @@ C-s = ["normal_mode", ":w"] # save and exit insert mode ready for commands
 "C-l" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "insert_mode"]
 #"C-x" = ["normal_mode", "yank", "yank_main_selection_to_clipboard", "delete_selection", "insert_mode"]
 
-# usability workarounds
+# -- usability workarounds --
 "C-u" = ["normal_mode", "undo", "insert_mode"]
 "C-c" = ["normal_mode", "extend_to_line_bounds", "yank", "yank_main_selection_to_clipboard", "insert_mode"]
 "C-v" = ["normal_mode", "paste_after", "insert_mode"]
