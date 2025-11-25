@@ -72,6 +72,7 @@ C-left = "@b"
 "C-t" = "@ /// [a-z]*\\s?:" # find all OTHER comments
 "C-h"= ["signature_help"]
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"] # lazygit
+"S-tab" = "@gn"
 
 [keys.insert]
 # -- ergonomics --
@@ -94,11 +95,11 @@ C-s = ["normal_mode", ":w"] # save and exit insert mode ready for commands
 
 # -- usability workarounds --
 "C-u" = ["normal_mode", "undo", "insert_mode"]
-"C-c" = ["normal_mode", "extend_to_line_bounds", "yank", "yank_main_selection_to_clipboard", "insert_mode"]
-"C-v" = ["normal_mode", "paste_after", "insert_mode"]
+"C-c" = ["normal_mode", "extend_to_line_bounds", "yank", "yank_main_selection_to_clipboard", "insert_mode"] # copy current line
+"C-v" = ["normal_mode", "paste_after", "insert_mode"] # paste
 "C-h" = ["signature_help"]
 
-# simulate esc for my bluetooth keyboard (` is on esc key)
+# simulate esc for my bluetooth keyboard (` is on esc key and req. Fn)
 "`" = { "`" = "normal_mode" }
 
 [keys.normal.space]
