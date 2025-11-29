@@ -50,7 +50,7 @@ C-s = ":w" # save
 "A-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"] # alt up move selected text
 "A-/" = "toggle_comments" # comment selected lines
 # select with shift and ctrl+shift
-"S-end" = ["normal_mode", "extend_to_line_end"] 
+"S-end" = ["normal_mode", "extend_to_line_end"]
 "S-home" = ["normal_mode", "extend_to_line_start"]
 "S-right" = ["normal_mode", "extend_char_right"]
 "S-left" = ["normal_mode", "extend_char_left"]
@@ -59,11 +59,12 @@ C-s = ":w" # save
 C-home = "@gg" # goto top of file
 C-end = "@ge" # goto end of file
 C-l = "@Xd" # delete current line
-C-right = "@w" 
+C-right = "@w"
 C-left = "@b"
-"C-w" = ":buffer-close" 
+"C-w" = ":buffer-close"
 "F3" = "@n" # vscode style find next
 "C-x" = "@yd" # cut selection
+"C-a" = "@%"
 
 # -- usability workarounds --
 "C-b" = "save_selection"  # bookmark
