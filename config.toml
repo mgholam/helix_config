@@ -98,7 +98,7 @@ C-s = ["normal_mode", ":w"] # save and exit insert mode ready for commands
 "C-l" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "insert_mode"]
 C-home = ["normal_mode", "goto_file_start", "insert_mode"] # goto top of file
 C-end = ["normal_mode","goto_last_line", "insert_mode"] # goto end of file
-C-a = ["normal_mode", "select_all", "insert_mode"] # select all
+C-a = ["normal_mode", "select_all"] # select all
 
 # -- usability workarounds --
 "C-u" = ["normal_mode", "undo", "insert_mode"]
