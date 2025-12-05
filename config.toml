@@ -56,6 +56,8 @@ C-s = ":w" # save
 "S-left" = ["normal_mode", "extend_char_left"]
 "S-C-left" =  ["normal_mode", "extend_prev_word_start"]
 "S-C-right" =  ["normal_mode", "extend_next_word_end"]
+"S-down" = ["normal_mode", "extend_line_down"]
+"S-up" = ["normal_mode", "extend_line_up"]
 C-home = "@gg" # goto top of file
 C-end = "@ge" # goto end of file
 C-l = "@Xd" # delete current line
@@ -89,11 +91,14 @@ C-s = ["normal_mode", ":w"] # save and exit insert mode ready for commands
 "S-home" = ["normal_mode", "extend_to_line_start"]
 "S-right" = ["normal_mode", "extend_char_right"]
 "S-left" = ["normal_mode", "extend_char_left"]
+"S-down" = ["normal_mode", "extend_line_down"]
+"S-up" = ["normal_mode", "extend_line_up"]
 "S-C-left" =  ["normal_mode", "extend_prev_word_start"]
 "S-C-right" =  ["normal_mode", "extend_next_word_end"]
 "C-l" = ["normal_mode", "extend_to_line_bounds", "delete_selection", "insert_mode"]
 C-home = ["normal_mode", "goto_file_start", "insert_mode"] # goto top of file
 C-end = ["normal_mode","goto_last_line", "insert_mode"] # goto end of file
+C-a = ["normal_mode", "select_all", "insert_mode"] # select all
 
 # -- usability workarounds --
 "C-u" = ["normal_mode", "undo", "insert_mode"]
